@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRIOLA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ARRIOLA</h1>
+    <div class="input-container">
+        <input type="text" id="codigo" placeholder="Ingresa tu código aquí">
+        <button onclick="validarCodigo()">Girar Ruleta</button>
+    </div>
+    <p class="error" id="mensaje-error"></p>
+    <div class="roulette" id="ruleta">
+        <div class="slice slice1"></div>
+        <div class="slice slice2"></div>
+        <div class="slice slice3"></div>
+        <div class="slice slice4"></div>
+    </div>
+    <div class="celebration" id="celebracion">
+        <p id="mensaje-premio"></p>
+        <p>Canje: <span id="codigo-canje"></span></p>
+        <p style="font-size: small;">Promoción válida hasta <span id="fecha-valida"></span></p>
+        <p style="font-size: small;">Tómale captura a tu premio para hacerlo válido</p>
+        <p style="font-size: small;">No aplica con otras promociones o descuentos</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
